@@ -1,21 +1,24 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
-  color: #0d1e2d;
-  padding: 0px 15px;
-  background-color: #ececec;
+  color: #BFC0C0;
+  margin: 0px;
+  background: linear-gradient(to right, #0B101A, #0c345d)
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Paytone One', sans-serif; 
+}
 a {
   color: #777;
   text-decoration: none;
 }
 
 a:hover {
-  color: #000;
+  color: #BFC0C0;
 }
 
 .section {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .hire-me-email {
@@ -32,7 +35,7 @@ a:hover {
 
 .filters a {
   text-decoration: none;
-  color: #000;
+  color: #BFC0C0;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -48,10 +51,10 @@ a:hover {
   right: 10px;
   bottom: 0;
   height: 1px;
-  background-color: #000;
+  background-color: #BFC0C0;
 }
 .filters a.active {
-  color: #000;
+  color: #BFC0C0;
 }
 .filters a.active:before {
   content: "";
@@ -60,7 +63,7 @@ a:hover {
   right: 10px;
   bottom: 0;
   height: 1px;
-  background-color: #000;
+  background-color: #BFC0C0;
 }
 
 .item {
@@ -71,6 +74,7 @@ a:hover {
   display: block;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 .item .item-wrap:after {
   z-index: 2;
@@ -207,63 +211,34 @@ a:hover {
 # Header
 --------------------------------------------------------------*/
 /* Custom Navmenu */
-.custom-navmenu {
-  background: #0d1e2d;
-}
-.custom-navmenu .custom-menu, .custom-navmenu .custom-menu li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.custom-navmenu .custom-menu li {
-  margin-bottom: 0;
-  font-size: 20px;
-}
-.custom-navmenu .custom-menu li a {
-  color: #fff;
-  padding: 10px 0 !important;
-}
-.custom-navmenu .custom-menu li a:hover {
-  text-decoration: none;
-}
-.custom-navmenu .custom-menu li.active a {
-  text-decoration: underline;
-}
-.custom-navmenu h3 {
-  font-size: 20px;
-  color: #fff;
-}
-.custom-navmenu p {
-  color: rgba(255, 255, 255, 0.6);
-}
-.custom-navmenu a {
-  color: rgba(255, 255, 255, 0.7);
-}
-.custom-navmenu a:hover {
-  color: #fff;
+.navbar {
+  background-color: #0F0F1E;
 }
 
 /* Custom Navbar */
 .custom-navbar {
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
 @media (max-width: 780px) {
   .custom-navbar > .container {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
+  color: #F8F9FA;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  width: 100%;
   padding: 15px 0px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .footer a {
   color: #000;
@@ -275,7 +250,7 @@ a:hover {
 .back-to-top .bi-arrow-up-short {
   width: 30px;
   height: 30px;
-  background: black;
+  background: #0F0F1E;
   color: white;
   display: flex;
   justify-content: center;
@@ -300,4 +275,78 @@ a:hover {
 }
 .social a:hover {
   color: #000;
+}
+
+
+/* Single portfolio */
+
+.site-single-portfolio .row {
+  --bs-gutter-x: 5rem;
+}
+
+.portfolio-category {
+  background-color: #777;
+  position: absolute;
+  color: #000;
+}
+
+.single-portfolio-h {
+  margin-bottom: 35px; 
+  margin-top: 55px;
+  font-size: 50px;
+}
+/* Project btn  */
+.project-button {
+  display: flex;
+  margin: 0px;
+  justify-content: flex-start;
+  height: 70px;
+  width: 250px;
+  /* border: 2px solid #BFC0C0; */
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  overflow: hidden;
+}
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#single_project_button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#single_project_button a {
+  position: relative;
+  transition: all .45s ease-Out;
+  border-bottom: solid;
+}
+
+#single_project_button:hover a {
+  color: #ffffff;
+}
+
+.project-desription .project-meta{
+  margin-top: 25px;
+}
+
+.project-desription .project-meta h5{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.project-desription .project-meta p{
+  font-size: 14px;
+  color: #eff1f4;
+  border-bottom: 1px solid #BFC0C0;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
 }
